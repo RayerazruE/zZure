@@ -1,0 +1,178 @@
+/* 전체선택자 *로 선언 */
+
+/* 타입 선택자 */
+/* element1 > element2 : 상위요소가 element1인 모든 element2 를 선택*/
+/* element1 ~ element2 : element1 요소 뒤에 모든 element2를 선택 */
+
+/* 클래스 선택자 */
+/* p.hometown : p 태그 내부의 class가 hometown인 태그만 변경 */
+
+
+/* id선택자 */
+/* #firstname : firstname의 id를 가진 태그를 선택 */
+
+
+
+/* 속성선택자 */
+/* element [attribute] : 설정이 된 부분만 선택 */
+/* element [attribute = value] : attribute가 value인 속성만 선택  */
+/* element [attribute ~= value] : attribute 안에 value가 속한 요소 모두 선택 */
+/* element [attribute |= value] : attribute가 value를 가진 모든 요소 선택*/
+/* element [attribute ^= value] : attribute가 value로 시작되는 모든 요소 선택 */
+
+
+/* CSS3 단위와 그레디언트 */
+
+width
+margin
+padding
+font-size
+border-width
+
+속성 값을 지정하기 위하여 단위를 사용
+                 (절대단위/상대단위)
+
+일부속성은 음수를 사용가능.
+
+/* 절대단위 */
+
+절대 길이 단위는 고정되어 있고 장치에 따라 크기 조절이 안 됨.
+절대 길이 단위는 화면크기가 다양하기 때문에 사용하지 않는 것을 권장.
+프린트 레이아웃과 같이 출력 매체가 알려진 경우 사용.
+
+cm, mm, in, px, pt, pc 등의 종류가 존재.
+
+/* 상대단위 */
+
+상대 길이 단위는 다른 길이 등록 정보와 관련된 길이를 지정
+em 및 rem 단위는 확장 가능한 레이아웃을 만드는 데 실용적
+viewport란 브라우저 창 크기를 의미
+viewport가 50cm이면, 너비는 1vw = 0.5cm
+
+em, ex, ch, rem, vw, vh, vmin, vmax, % 등의 존류가 존재.
+
+
+/* 그레디언트 */
+
+두 가지 이상의 색상을 혼합한 색을 만드는 기능
+CSS3에서 부터 그레디언트 기능을 지원
+
+
+
+/* CSS3 속성 */
+
+/* 가시속성 */
+
+태그가 화면에 보이는 방식을 지정하는 속성
+display
+none : 화면에 보이지 않게
+block : block 형식으로 지정
+inline : inline 형식으로 지정
+inline-block : inlinke-block 형식으로 지정
+
+/* 박스속성 */
+
+웹페이지 레이아웃 구성에 가장 중요한 속성
+width, height
+margin, padding 
+border
+
+/* 배경속성 */
+
+background 속성 : 특정 태그의 배경 이미지 또는 색상을 지정
+background-image : 배경 이미지 설정
+background-position : 시작 위치 지정
+background-size : 이미지 크기 지정
+background-repeat : 배경 이미지 반복
+background-attachment : 배경 이미지가 나머지 페이지와 함께 스크롤 되는지 고정 되는지 설정
+background-color : 배경 색상 지정
+
+/* 폰트속성 */
+
+font-size : 크기 지정
+font-family : 종류 지정
+font-style : 기울기 지정
+font-weight : 두께 지정
+text-align : 글자 정렬 지정
+
+절대적 좌표 : x, y 좌표를 설정해서 지정
+상대적 좌표 : 요소를 입력한 순서대로 상대적으로 위치를 지정
+
+/* 위치속성 */
+
+static : 위에서 아래로 순서대로 배치
+relative : 초기 상태에서 상하좌우로 위치 이동
+absolute : 절대적 위치 좌표 설정
+fixed : 화면 기준으로 절대적 위치 좌표 설정
+overflow : 내부 요소가 범위를 벗어날 때 설정 방법
+hidden : 영역 벗어나는 부분 보이지 않게
+scroll : 영역 벗어나는 부분 스크롤로 지정
+
+/* float속성 */
+
+태그 요소가 어떻게 떠다니는지 지정
+절대적 위치를 사용하는 요소는 float을 무시
+
+left : 태그를 왼쪽에 붙임
+right : 태그를 오른쪽에 붙임
+
+
+
+/* 레이아웃 (반응형) */
+
+<header> 문서 또는 섹션의 머리글을 정의
+<nav> 탐색 링크를 위한 컨테이너를 정의
+<section> 문서의 섹션 정의
+<article> 독립적인 독립 기사 정의
+<aside> 사이드바처럼 콘텐츠를 제외하고 콘텐츠를 정의(광고)
+<footer> 문서 또는 섹션의 바닥글을 정의(개발자 정보)
+
+
+/* 레이아웃 요소 */
+
+details
+summary
+
+웹페이지 구상 -> 구성 영역 분리 -> 구성 영역 행 단위 분리 -> 나누어진 행의 내부 요소 분리
+
+
+/* 반응형 웹 활용시 주의사항 */
+
+웹사이트 레이아웃을 만들 때 유저가 사용하는 모니터 화면 해상도 고려
+해상도에 따라 가로폭이나 배치를 변경하여 가독성 높이기
+@media 를 이용하여 화면 해상도에 따라 다른 레이아웃 지정
+
+ㄴ 뷰 포트의 너비와 높이
+ㄴ 장치의 너비와 높이
+
+방향 결정(가로, 세로모드의 태블릿 혹은 스마트폰)
+resolution
+미디어 쿼리를 사용하면 데스크탑, 랩탑, 태블릿 및 스마트폰에 맞춤형 CSS를 사용
+
+
+
+/* 미디어 쿼리 */
+
+선언
+@media not|only mediatype and (media feature and|or|not mediafeature) {CSS-Code;}
+
+not : 전체 미디어 쿼리의 의미를 되돌림
+only : 미디어 쿼리를 지원하지 않는 브라우저 지정된 스타일을 적용하지 못하게 함
+and : 미디어 기능을 미디어 유형 또는 다른 미디어 기능과 결합
+
+
+all, print, screen, speech
+
+
+/* 뷰포트 meta 태그란? */
+
+웹브라우저에 특별한 정보를 제공하는 태그
+
+meta name="viewport" content="width=device-width", initial-scale=1"
+
+
+
+
+
+
+

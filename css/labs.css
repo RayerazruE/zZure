@@ -1,0 +1,42 @@
+.title{
+    display: flex;
+    box-sizing: border-box;
+    width: 100%; height: 150px;
+    background-image: url(./images/labs.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto auto;
+    border-bottom: 1px solid #110000;
+    justify-content: flex-end;
+    align-items: center;
+    position: sticky; top: 0px;
+}
+
+.contents{
+    display: flex;
+    width: 100px; height: 50px;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 20px 10px 20px;
+}
+
+.contents:hover{
+    background-color: aqua;
+}
+
+.headline{
+    position: fixed;
+    right: 0px; bottom: 0px;
+}
+
+.body{
+    position: fixed;
+    right: 0px; bottom: 0px;
+}
+
+.list{
+    width: 400px; height: 2000px;
+    background-color: #AAAAAA;
+    position: fixed;
+    left: 0px;
+}

@@ -1,0 +1,70 @@
+div{ border: 1px dashed black; }
+header{ text-align: center; }
+
+form input[type=search]{
+    width: 50%; height: 30px;
+    text-align: center;
+}
+.center{
+    text-align: center;
+}
+
+.flex_start{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: relative;
+    align-items: flex-start;
+}
+.nav {
+    display: flex;
+    flex-direction: row;
+}
+.nav a{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+.nav img{
+    width: calc(300px/6);
+}
+.box_champ img{
+    width: calc(300px/6);
+}
+.nav span{
+    width: 100%;
+    text-align: center;
+}
+.box_line{
+    flex-direction: column;
+    width: 300px;
+    margin: 0px;
+}
+
+/* 
+
+
+
+
+.css_line {
+    position: relative;
+    display: block;
+}
+
+.css_line img {
+    border-radius: 4px;
+}
+
+.box13{
+    width: 700px; height: 700px;
+    border: 1px solid black;
+    margin: 10px 0px 10px 5px;
+}
+
+.box_champ{
+    width: 280px; height: 570px;
+    position: absolute;
+    margin-top: 120px;
+}
+
+
+*/
