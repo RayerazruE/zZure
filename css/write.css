@@ -1,0 +1,202 @@
+.listFrame {
+    position: relative;
+    margin-top: 18px;
+    width: 710px;
+    outline: 1px solid #cecece;
+    background: white;
+}
+
+.listTop {
+    margin-top: 1px;
+    width: 710px;
+    height: 28px;
+    overflow: hidden;
+    background: linear-gradient(to top, #cccccc, #fefefe);
+    border-bottom: 1px solid #cecece;
+}
+
+.listTop .date {
+    line-height: 28px;
+    width: 160px;
+    margin-left: 10px;
+    color: black;
+    font-family: 돋움, Dotum, Helvetica;
+    font-weight: bold;
+}
+
+.listTop .title {
+    line-height: 28px;
+    width: 370px;
+    color: black;
+    font-size: 14px;
+    font-family: 돋움, Dotum, Helvetica;
+    font-weight: bold;
+    text-align: center;
+}
+
+.listTop .stage {
+    line-height: 28px;
+    width: 160px;
+    margin-right: 10px;
+    color: black;
+    font-size: 13px;
+    font-family: 돋움, Dotum, Helvetica;
+    font-weight: bold;
+    text-align: right;
+}
+
+.wTeam {
+    width: 280px;
+    position: absolute;
+    left: 0px;
+    /* outline: 1px solid green; */
+}
+
+.lTeam {
+    width: 280px;
+    position: absolute;
+    right: 0px;
+    /* outline: 1px solid green; */
+}
+
+.score {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 130px;
+    text-align: center;
+}
+
+.listDetail {
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(to top, #fefefe, #cccccc);
+    border-top: 1px solid #cecece;
+    text-align: center;
+}
+
+.detailall {
+    display: flex;
+    /* outline: 1px solid blue; */
+    width: 100%;
+    height: 140px;
+}
+
+/* body * {
+    outline: 1px solid black;
+} */
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 5px 0 0 0;
+}
+
+li {
+    display: inline-block;
+}
+
+.pickbox {
+    /* outline: 1px solid orange; */
+    text-align: center;
+}
+
+.banbox {
+    /* outline: 1px solid rgb(167, 100, 167); */
+    text-align: center;
+}
+
+
+.pick > li > img {
+    width: 45px;
+    height: 45px;
+}
+
+.ban > li > img {
+    width: 30px;
+    height: 30px;
+}
+
+
+.teamstatpart {
+    width: 85%;
+    /* outline: 1px solid red; */
+    text-align: center;
+}
+
+.windefeatpart {
+    width: 15%;
+    /* outline: 1px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ul[id^="wban"] {
+    display: flex;
+    justify-content: flex-start;
+}
+
+ul[id^="lban"] {
+    display: flex;
+    justify-content: flex-end;
+} */
+
+ul[id^="wban"] ::before{
+    content: "BAN";
+    position: absolute;
+    left: 10px;
+}
+
+ul[id^="lban"] ::after{
+    content: "BAN";
+    position: absolute;
+    right: 10px;
+}
+
+
+.wTeamdetail {
+    display: flex;
+    /* outline: 1px solid black; */
+    justify-content: space-between;
+}
+
+
+.lTeamdetail {
+    display: flex;
+    /* outline: 1px solid black; */
+    justify-content: space-between;
+}
+
+
+/* .color1 {
+    width: 50px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.color2 {
+    width: 50px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+details > summary {
+    cursor: pointer;
+    list-style: none;
+}
+
+.summary {
+    outline: 1px solid #cecece;
+    /* border-top: 0;
+    border-left: 1px solid #cecece;
+    border-right: 1px solid #cecece;
+    border-bottom: 1px solid #cecece; */
+    background: white;
+}

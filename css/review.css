@@ -1,0 +1,244 @@
+input#sidebar {
+    display: none;
+}
+
+/* 헤더영역 */
+header {
+    background-color: #e2e7f3;
+    position: relative;
+    z-index: 4;
+}
+
+header > div {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    min-height: 60px;
+}
+
+header label.menu {
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    transform: translateY(-50%);
+    width: 128px;
+    height: 96px;
+    background: url('../images/wa3.png') 0 0 no-repeat ;
+    background-position-y: 12px;
+    cursor: pointer;
+    background-size: 100% auto;
+}
+
+.headerimage {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100px;
+}
+
+
+/* 본문영역 */
+.container {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.test {
+    text-align: right;
+    height: 50px;
+    margin: 5px 0 10px 0;
+}
+
+/* body */
+.write{
+    width: 80px;
+    height: 30px;
+    margin: 10px 5px 10px 0;
+    background-color: white;
+    border-radius: 3px;
+    border-color: #eeeeee;
+    box-shadow: none;
+}
+
+.write:hover{
+    background-color: #efefef;
+    box-shadow: none;
+}
+
+.recordall{
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    text-align: flex-start;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+
+}
+
+.record{
+    min-width: 800px;
+    height: 200px;
+    border: 1px solid #ddd;
+}
+
+
+
+
+/* .container img {
+    max-width: 100%;
+} */
+
+
+/* 사이드바 */
+.sidebar_content {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    height: 100%;
+    background: #f0f0f0;
+    transition: all .35s;
+    z-index: 5;
+    /* border-radius: top-left-x top-right-x bottom-right-x bottom-left-x / top-left-y top-right-y bottom-right-y bottom-left-y
+ */
+    border-radius: 0px 20px 20px 0px / 0px 10px 10px 0px;
+}
+
+.sidebar_content > ul {
+    margin: 20px;
+}
+
+.sidebar_content > ul > li {
+    border-bottom: 1px solid #dddddd;
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar_content > ul :hover {
+    background-color: #dddddd;
+}
+
+.sidebar_content label[for*='sidebar'] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.leagueseasonrank {
+    width: 30px;
+    height: 50px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.lckteamlogo {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.lckteamlogo > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.lckteamname {
+    width: 100px;
+    height: 50px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* 드롭다운 */
+
+
+
+
+/* 사이드바 외 배경영역 */
+.background {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.8);
+    transition: all .35s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+}
+
+/* input 체크 */
+input#sidebar:checked ~ header label {
+    
+    animation-fill-mode: forwards;
+    animation-name: anime;
+    animation-duration: 0.25s;
+
+}
+@keyframes anime{
+    100%{
+        background-position: 0 -80px;
+    }
+}
+
+input#sidebar:checked ~ .sidebar_content {
+    left: 0;
+}
+
+input#sidebar:checked ~ .background {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* paging */
+.paging{
+    min-width: 800px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.paging a {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    box-sizing: border-box;
+    vertical-align: middle;
+    border: 1px solid #dedede;
+    line-height: 100%;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.paging a.num{
+    color: #aaa;
+    padding-top: 8px;
+    margin: 3px;
+}
+
+.paging a.num.on{
+    border-color: #222;
+    background: #222;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* footer */
+footer {
+    min-width: 800px;
+    margin-top: 30px;
+    text-align: center;
+}

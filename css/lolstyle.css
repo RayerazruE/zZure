@@ -1,5 +1,23 @@
 div{ border: 1px dashed black; }
-header{ text-align: center; }
+header{
+    position: relative;
+}
+
+.banner_index{
+    position: absolute;
+}
+
+button{
+    background-image: url(../images/lck.svg);
+    width: 150px;
+    height: 150px;
+}
+
+
+.banner_image{
+    display: flex;
+    justify-content: center;
+}
 
 form input[type=search]{
     width: 50%; height: 30px;

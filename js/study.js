@@ -443,6 +443,234 @@ for(let day of days){
 
 
 
+// 실행문은 세미콜론 ; 으로 구분됨.
+// 대소문자를 구분함
+// 리터럴(Literal)은 직접 표현되는 값 그자체
+
+// 식별자 방식 Camel Case, Underscore Case
+// 자바스크립트에서는 카멜케이스를 베이스로 사용함.
+
+
+// window.alert() 메소드
+// document.write() 메소드
+
+var num = 10; // 숫자
+var hello = "안녕"; // 문자열
+var bool = false // boolean 타입 false
+
+var sym = Symbol("javascript") // symbol타입
+var symObj = Object(sym); // object 타입
+var str; // undefined
+var str = null; // null
+
+// 객체object
+var person = {name:"김씨", age:20}; // 객체의 생성
+// 객체의 프로퍼티 참조
+document.getElementById("result").innerHTML =
+"이름:" + person.name + "나이:" + person.age;
+
+var month; // month라는 이름의 변수 선언
+date = 25; // date라는 이름의 변수를 묵시적으로 선언
+
+// 대입연산자 += -= *= /= %=
+// 증감연산자 ++x x++ --x x--
+// 비교연산자 == === != !== > <= < <=
+// 논리연산자 && || !
+
+
+/* 함수 function 키워드로 선언, 함수의 이름, 괄호 안에 (,)로 구분되는
+함수의 매개변수(parameter)  중괄호({})로 둘러싸인 자바스크립트 실행문*/
+
+
+/* 반환문
+return 키워드 사용
+function multiNum(x, y) {
+    return x * y;
+}
+
+var num = multinum(3, 4);
+document.write(num);
+*/
+
+
+// jQuery - 수많은 라이브러리 존재
+// 기본문법 $(선택자).동작함수();
+
+
+// 필터링에 사용 가능한 선택자
+/*
+:eq(n) 선택한 요소 중에서 인덱스가 n인 요소를 선택함
+:gt(n) 선택한 요소 중에서 인덱스가 n보다 큰 요소를 모두 선택함
+:lt(n) 선택한 요소 중에서 인덱스가 n보다 작은 요소를 모두 선택함
+:even 선택한 요소 중에서 인덱스가 짝수인 요소를 모두 선택함
+:odd 선택한 요소 중에서 인덱스가 홀수인 요소를 모두 선택함
+:first 첫 번째 요소
+:last 마지막 요소
+:animated 애니메이션 효과가 실행 중인 요소 모두 선택
+:header h1 ~ h6까지의 요소 모두 선택
+:lang(언어) 지정한 언어의 요소 모두 선택
+:not(선택자) 일치하지 않는 요소 모두 선택
+:root 최상위 루트 요소 선택
+:target URL의 fragment 식별자와 일치하는 요소 모두 선택
+:contains(텍스트) 지정한 텍스트를 포함하는 요소를 모두 선택
+:has(선택자) 일치하는 자손 요소를 갖는 요소 모두 선택
+:empty 자식요소를 가지고 있지 않은 요소를 모두 선택
+:parent 자식 요소를 가지고 있는 요소를 모두 선택
+*/
+
+
+//input 요소를 선택할 수 있는 선택자
+//:이름
+
+//조상요소 탐색
+/*
+.parent() 부모 선택
+.parents() 조상 모두 선택
+.parentsUntil() 조상 요소 중 지정한 선택자에 해당하는 요소
+                바로 이전까지의 요소 모두 선택
+.closest() 선택한 요소 포함 조상 요소 중에서 지정한 선택자에
+           해당하는 요소 중 가장 첫 번째를 선택
+*/
+
+//형제요소 탐색
+/*
+.siblings() 모두
+.next() 다음
+.nextAll() 다음 모두
+.nextUntil() 선택자에 해당하는 요소 바로 이전까지 모두 선택
+.prev() 바로 이전에 위치한 형제 요소
+.prevAll()
+.prevUntil()
+*/
+
+//자손요소 탐색
+/*
+.children()
+.find()
+*/
+
+//기타 탐색
+/*
+.add()
+.addBack()
+.each()
+.end()
+.offsetParent()
+.contents()
+*/
+
+
+// 이벤트? = 마우스 클릭, 페이지를 벗어남 등
+/*
+이벤트 처리를 위해 이벤트 핸들러 함수를 작성
+.on()
+    .click()
+    .dblclick()
+    .hover()
+    .mousedown()
+    .mouseenter()
+    .mouseleave()
+    .mousemove()
+    .mouseout()
+    .mouseover()
+    .mouseup()
+
+    .keydown()
+    .keyup()
+    .keypress()
+*/
+
+
+//이벤트 연결 - 입력 양식 이벤트 메소드
+/*
+.blur()
+.change()
+.select()
+.submit()
+.focus()
+.focusin()
+.focusout()
+*/
+
+
+
+//쭈루연구소 응용가능한 예제
+/*
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        //$("p").hide();
+            $("#test").display();
+                $(".another").hide();
+    })
+})
+</script>
+</head>
+
+<body>
+    <p>문자1</p>
+    <p id="test">문자2</p>
+    <p class="another">문자3</p>
+
+    <button>클릭</button>
+</body>
+</html>
+*/
+
+
+// jQuery UI 인터랙션
+
+/* 인터랙션
+Draggable
+Droppable
+Resizeable
+Selectable
+Sortable
+*/
+
+/* 위젯
+Accordion
+Autocomplete
+Button
+Datepicker
+Dialog
+Progressbar
+Slider
+Tabs
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

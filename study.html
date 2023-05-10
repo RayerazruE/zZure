@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    table, th, td{
+        border: 1px solid black;
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Type Attribute</h3>
+    <ul type="square">
+        <li>쭈루</li>
+        <li>팡어</li>
+        <li>뼈햄</li>
+    </ul>
+
+    <ul type="circle">
+        <li>쭈루</li>
+        <li>팡어</li>
+        <li>뼈햄</li>
+    </ul>
+
+    <h3>Compact Attribute</h3>
+    <ul compact>
+        <li>쭈루</li>
+        <li>팡어</li>
+        <li>뼈햄</li>
+    </ul>
+
+    <p>- 쭈루</p>
+    <p>- 팡어</p>
+    <p>- 뼈햄</p>
+
+
+    <table>
+        <caption>Type1</caption>
+            <tr>
+                <th>No.</th>
+                <th>Name</th>
+                <th>age</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Kim</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Lee</td>
+                <td>25</td>
+            </tr>
+    </table>
+    
+    <table>
+        <caption>Type2</caption>
+            <tr>
+                <td>No.</td>
+                <td>Name</td>
+                <td>age</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Kim</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Lee</td>
+                <td>25</td>
+            </tr>
+    </table>
+
+    <audio controls loop autoplay>
+         <source src="record/ギラギラ Inst_Ado_Official_202205312002.mp3" type="audio/mpeg">
+    </audio>
+
+    <video controls width="640" height="480" poster="images/3인라팡.png">
+        <source src="video/515123.mp4" type="video/mp4">
+    </video>
+
+    <form action="/action page.php">
+        <input type="button" value="button" onclick="msg()"><br><br>
+        <input type="checkbox" name="check" value="1">check value<br><br>
+        <input type="file" name="myfile"><br><br>
+        <input type="hidden" id="custid" name="hiddenname" value="1234">hidden type<br><br>
+        <input type="image" src="dss/0000.png" alt="zzurehayang"><br><br>
+        <input type="password" name="pwd" value="defaultvalue"><br><br>
+        <input type="radio" name="gender" value="male">male<br>
+        <input type="radio" name="gender" value="female">female<br><br>
+        First name: <input type="text" name="fname"><br>
+        Last name: <input type="text" name="lname"><br><br>
+        <input type="reset" value="reset"><br><br>
+        <input type="submit" value="submit"><br><br>
+    </form>
+
+    <form action="/action_page.php">
+        color : 
+        <input type="color" name="favcolor" value="#ff0000"><br><br>
+        date : 
+        <input type="date" name="bday"><br><br>
+        datetime : 
+        <input type="datetime-local" name="bdaytime"><br><br>
+        month : 
+        <input type="month" name="bdaymonth"><br><br>
+        number : 
+        <input type="number" name="quantity" min="1" max="5"><br><br>
+        range : 
+        <input type="range" name="points" min="0" max="10"><br><br>
+        search : 
+        <input type="search" name="searchdata" value="data"><br><br>
+        tel : 
+        <input type="tel" name="usrtel"><br><br>
+        time : 
+        <input type="time" name="usr_time"><br><br>
+        url : 
+        <input type="url" name="homepage"><br><br>
+        week : 
+        <input type="week" name="week_year">
+    </form>
+
+</body>
+</html>
