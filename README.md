@@ -1,2 +1,2 @@
 # zZure
-https://rayerazrue.github.io/zZure/lolhtml.html
+https://rayerazrue.github.io/zZure/index.html
